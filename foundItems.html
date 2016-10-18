@@ -1,0 +1,17 @@
+
+<table class="table table-striped table-bordered table-hover table-condensed">
+  <tr ng-repeat="item in list.found">
+    <td>
+      {{item.name}}
+    </td>
+    <td>
+      {{item.short_name}}
+    </td>
+    <td>
+      {{item.description}}
+    </td>
+    <td>
+      <button type="button" ng-click="list.removeItem($index)" name="button">Don't want this one!</button>
+    </td>
+  </tr>
+</table>
